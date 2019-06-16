@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Person List</title>
+</head>
+<body>
+    <h1 style="text-align: center">Person List Page</h1>
+    <div style="text-align: center; margin-top: 50px;">
+        {% for item in object_list %}
+            {{ item.name }} - {{ item.email }} <br />
+        {% endfor %}
+        <hr />
+    <a href="{% url 'homepage' %}">back home</a>
+    </div>
+</body>
+</html>
